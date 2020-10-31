@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ticket webpage</title>
+<script type="text/javascript">
+function calculate(){
+	var x,result;
+	x = document.getElementById('count').value ;
+
+		result = x*450;
+		
+  document.getElementById('out').innerHTML = result;
+} 
+</script>
+<style>
+body{
+	
+	background-color:gray;
+	border:solid;
+	width:400px;
+	
+	}
+	
+
+</style>
+</head>
+<body align="center">
+<div id="ticket">
+    <div class="Content1">
+      <header> 
+				<h1>Hotel in Canada</h1>
+               <h2>Tickets</h2>
+      </header>
+      <div>
+	  <form>
+         Tickets, $450 per person<br>
+        <input id="count" type="number" placeholder="How many?"><br>
+		<p id="out">In here You can See how much you paid</p>
+		<input type="button" onclick="calculate()" value="Full Amount"> 
+        <p>Send To</p>
+        <input type="text" placeholder="Enter email"><br>
+		<br/>
+		<input type="submit" name="Submit"  value="PAY">
+        <input type="Reset" name="Close" value="Close"> 
+	</form>
+        <p>Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+  </body>
+  </html>
